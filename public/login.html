@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Harmful Website Detector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- theme meta -->
+	<meta name="theme-name" content="dot" />
+
+	<!-- ** CSS Plugins Needed for the Project ** -->
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+	<!-- themefy-icon -->
+	<link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+	<!--Favicon-->
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Main Stylesheet -->
+	<link href="assets/style.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+	<!-- header -->
+	<header class="banner overlay bg-cover" data-background="images/banner.jpg">
+		<nav class="navbar navbar-expand-md navbar-dark">
+			<div class="container">
+				<a class="navbar-brand px-2" href="index.html">Harmful Website Detector</a>
+				<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+					aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse text-center" id="navigation">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link text-dark" href="index.html">Home</a>
+						</li>
+						<li id="registerLink" class="nav-item">
+							<a class="nav-link text-dark" href="register.html">register</a>
+						</li>
+						<li id="loginLink" class="nav-item">
+							<a class="nav-link text-dark" href="login.html">login</a>
+						</li>
+						<li id="logoutButton" class="nav-item">
+							<a class="nav-link text-dark">logout</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <center>
+                <form id="loginForm">
+            <div class="form">
+                <div class="title">Welcome</div>
+                <div class="subtitle">Let's login to your account!</div>
+          
+                <div class="input-container ic1">
+                  <input placeholder="" type="text" class="input" id="loginUsername">
+                  <div class="cut"></div>
+                  <label class="iLabel" for="usernme">Username</label>
+                </div>
+
+                <div class="input-container ic2">
+                  <input placeholder="" type="password" class="input" id="loginPassword">
+                  <div class="cut cut-short"></div>
+                  <label class="iLabel" for="password">Password</label>
+                </div>
+                <button class="submit">Login</button>
+                <div class="subtitle">
+                    <span>Don't have an account? <br><br><a class="input" href="register.html">Create one!</a></span>
+                </div>
+              </div>
+            </form>
+            </center>
+        </div>
+    </section>
+
+	<!-- footer -->
+	<footer class="section pb-4">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-8 text-md-left text-center">
+					<p class="mb-md-0 mb-4">Copyright © 2024 Designed and Developed by <a
+							href="https://the-developers-121.web.app">The Developers</a></p>
+				</div>
+				<div class="col-md-4 text-md-right text-center">
+					<ul class="list-inline">
+						<li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-facebook"></i></a></li>
+						<li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-twitter-alt"></i></a></li>
+						<li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-github"></i></a></li>
+						<li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /footer -->
+
+	<!-- ** JS Plugins Needed for the Project ** -->
+	<!-- jquiry -->
+	<script src="plugins/jquery/jquery-1.12.4.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- match-height JS -->
+	<script src="plugins/match-height/jquery.matchHeight-min.js"></script>
+	<!-- Main Script -->
+	<script src="assets/script.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

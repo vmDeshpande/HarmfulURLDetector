@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Harmful Website Detector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- theme meta -->
+	<meta name="theme-name" content="dot" />
+
+	<!-- ** CSS Plugins Needed for the Project ** -->
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+	<!-- themefy-icon -->
+	<link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+	<!--Favicon-->
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Main Stylesheet -->
+	<link href="assets/style.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+	<!-- header -->
+	<header class="banner overlay bg-cover" data-background="images/banner.jpg">
+		<nav class="navbar navbar-expand-md navbar-dark">
+			<div class="container">
+				<a class="navbar-brand px-2" href="index.html">Harmful Website Detector</a>
+				<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+					aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse text-center" id="navigation">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link text-dark" href="index.html">Home</a>
+						</li>
+						<li id="registerLink" class="nav-item">
+							<a class="nav-link text-dark" href="register.html">register</a>
+						</li>
+						<li id="loginLink" class="nav-item">
+							<a class="nav-link text-dark" href="login.html">login</a>
+						</li>
+						<li id="logoutButton" class="nav-item">
+							<a class="nav-link text-dark">logout</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- banner -->
+		<div class="container section">
+			<div class="row">
+				<div class="col-lg-8 text-center mx-auto">
+					<h1 class="text-white mb-3">Harmful Website Detector</h1>
+					<p class="text-white mb-4">Real-time analysis, security assurance, database tracking, scalable solution.</p>
+					<div class="position-relative">
+						<input id="urlInput" class="form-control" placeholder="URL Here"><a onclick="checkURL()"><i class="ti-search search-icon"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /banner -->
+	</header>
+	<!-- /header -->
+
+	<!-- search result -->
+	<section class="container mt-5">
+		<div class="card">
+			<div class="card-body" id="resultContainer">
+	
+			</div>
+		</div>
+	</section>
+	<!-- /search result -->
+	<!-- Topics -->
+	<section class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<h2 class="section-title">Advantages</h2>
+				</div>
+
+				<!-- Topic 1 -->
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<a href="single.html" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+						<i class="ti-panel icon text-primary d-block mb-4"></i>
+						<h3 class="mb-3 mt-0">URL Analysis</h3>
+						<p class="mb-0">Users can submit URLs for analysis to determine if they are potentially harmful.
+						</p>
+					</a>
+				</div>
+
+				<!-- Topic 2 -->
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<a href="single.html" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+						<i class="ti-time icon text-primary d-block mb-4"></i>
+						<h3 class="mb-3 mt-0">Real-time Results</h3>
+						<p class="mb-0">Quick and real-time feedback on the safety of submitted URLs.</p>
+					</a>
+				</div>
+
+				<!-- Topic 3 -->
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<a href="single.html" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+						<i class="ti-package icon text-primary d-block mb-4"></i>
+						<h3 class="mb-3 mt-0">Database Storage</h3>
+						<p class="mb-0">Storage of analyzed URLs in a database for historical tracking.</p>
+					</a>
+				</div>
+
+				<!-- Topic 4 -->
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<a href="single.html" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+						<i class="ti-check icon text-primary d-block mb-4"></i>
+						<h3 class="mb-3 mt-0">Security Assurance</h3>
+						<p class="mb-0">Assure the security of websites by analyzing their safety status.</p>
+					</a>
+				</div>
+
+				<!-- Topic 5 -->
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<a href="single.html" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+						<i class="ti-settings icon text-primary d-block mb-4"></i>
+						<h3 class="mb-3 mt-0">Scalable Solution</h3>
+						<p class="mb-0">Create a scalable solution for analyzing websites and ensuring user safety.</p>
+					</a>
+				</div>
+
+				<!-- Topic 6 -->
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<a href="single.html" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+						<i class="ti-stats-up icon text-primary d-block mb-4"></i>
+						<h3 class="mb-3 mt-0">Historical Tracking</h3>
+						<p class="mb-0">Track historical data of analyzed URLs for future reference and analysis.</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Topics -->
+
+	<!-- Cyber Crimes and Phishing Attacks Details -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section px-3 bg-white shadow text-center">
+						<h2 class="mb-4">Details about Cyber Crimes and Phishing Attacks</h2>
+						<p class="mb-4">
+							Cyber crimes and phishing attacks pose significant threats to individuals and organizations
+							globally.
+							These malicious activities involve the unauthorized access, manipulation, or theft of
+							sensitive information.
+							Phishing attacks, in particular, employ deceptive tactics to trick individuals into
+							divulging confidential data.
+
+							Stay informed about the latest trends in cyber threats, understand the tactics used by
+							attackers,
+							and learn how to protect yourself and your organization from falling victim to these
+							nefarious activities.
+
+							Explore our resources to gain insights into cybersecurity best practices, threat
+							intelligence,
+							and proactive measures to safeguard against cyber crimes and phishing attempts.
+
+							Don't let your guard down—knowledge is your first line of defense in the ever-evolving
+							landscape of digital security.
+						</p>
+						<a href="cyber-crimes.html" class="btn btn-primary">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Cyber Crimes and Phishing Attacks Details -->
+
+	<!-- footer -->
+	<footer class="section pb-4">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-8 text-md-left text-center">
+					<p class="mb-md-0 mb-4">Copyright © 2024 Designed and Developed by <a
+							href="https://the-developers-121.web.app">The Developers</a></p>
+				</div>
+				<div class="col-md-4 text-md-right text-center">
+					<ul class="list-inline">
+						<li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-facebook"></i></a></li>
+						<li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-twitter-alt"></i></a></li>
+						<li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-github"></i></a></li>
+						<li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /footer -->
+
+	<!-- ** JS Plugins Needed for the Project ** -->
+	<!-- jquiry -->
+	<script src="plugins/jquery/jquery-1.12.4.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- match-height JS -->
+	<script src="plugins/match-height/jquery.matchHeight-min.js"></script>
+	<!-- Main Script -->
+	<script src="assets/script.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
